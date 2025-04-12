@@ -12,6 +12,7 @@ const hendleclick = ()=>{
       <HStack>
         <Button onClick = {hendleclick}>Click me</Button>
       </HStack>
+      <button>get started</button>
     </>
   );
 }
