@@ -1,19 +1,15 @@
+import React from "react";
 import "./App.css";
-import { Button, HStack } from "@chakra-ui/react";
+import { Button, Container, HStack } from "@chakra-ui/react";
+import AllRoute from "./Components/custom/AllRoute";
+import Navbar from "./Components/custom/Navbar";
 
 function App() {
-
-const hendleclick = ()=>{
-  alert("Wellcome-user")
-}
-
   return (
-    <>
-      <HStack>
-        <Button onClick = {hendleclick}>Click me</Button>
-      </HStack>
-      <button>get started</button>
-    </>
+    <Container maxW="container.xl" p={4}>
+      <Navbar />
+      <AllRoute />
+    </Container>
   );
 }
 
